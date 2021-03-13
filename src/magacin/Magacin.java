@@ -4,8 +4,8 @@ import java.util.LinkedList;
 
 import magacin.interfejs.IMagacin;
 
-public class Magacin implements IMagacin{
-	
+public class Magacin implements IMagacin {
+
 	LinkedList<Artikal> artikli;
 
 	public Magacin() {
@@ -29,7 +29,7 @@ public class Magacin implements IMagacin{
 		if(artikli.contains(artikal)) {
 			throw new RuntimeException("Artikal vec postoji u magacinu.");
 		}
-		artikli.push(artikal);
+		artikli.add(artikal);
 	}
 
 	@Override
@@ -56,6 +56,7 @@ public class Magacin implements IMagacin{
 			}
 		}
 		return null;
+
 	}
 
 }
