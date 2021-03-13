@@ -19,6 +19,9 @@ public class Artikal {
 	}
 	
 	public void setSifra(int sifra) {
+		if(sifra <= 0 ) {
+			throw new RuntimeException("Sifra mora da bude broj veci od 0.");
+		}
 		this.sifra = sifra;
 	}
 	
@@ -27,6 +30,9 @@ public class Artikal {
 	}
 	
 	public void setNaziv(String naziv) {
+		if(naziv.length() < 2) {
+			throw new RuntimeException("Naziv mora da ima bar 2 karaktera.");
+		}
 		this.naziv = naziv;
 	}
 	
@@ -35,6 +41,9 @@ public class Artikal {
 	}
 	
 	public void setOpis(String opis) {
+		if(opis.length() < 2) {
+			throw new RuntimeException("Opis mora da ima bar 2 karaktera.");
+		}
 		this.opis = opis;
 	}
 	
@@ -43,6 +52,9 @@ public class Artikal {
 	}
 	
 	public void setKolicina(int kolicina) {
+		if(kolicina < 0) {
+			throw new RuntimeException("Kolicina ne moze da bude negativna");
+		}
 		this.kolicina = kolicina;
 	}
 	

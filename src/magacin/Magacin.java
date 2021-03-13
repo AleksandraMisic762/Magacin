@@ -6,9 +6,9 @@ public class Magacin {
 	
 	LinkedList<Artikal> artikli;
 
-	public Magacin(LinkedList<Artikal> artikli) {
+	public Magacin() {
 		super();
-		this.artikli = artikli;
+		this.artikli = new LinkedList<>();
 	}
 
 	public LinkedList<Artikal> getArtikli() {

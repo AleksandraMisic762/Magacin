@@ -14,6 +14,9 @@ public class Knjiga extends Artikal {
 	}
 
 	public void setIsbn(String isbn) {
+		if(isbn.length() != 13) {
+			throw new RuntimeException("ISBN mora da ima 13 cifara");
+		}
 		this.isbn = isbn;
 	}
 	

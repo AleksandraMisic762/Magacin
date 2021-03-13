@@ -16,6 +16,9 @@ public class KucnaHemija extends Artikal {
 	}
 
 	public void setRokTrajanja(Date rokTrajanja) {
+		if(rokTrajanja.before(new Date(System.currentTimeMillis()))) {
+			throw new RuntimeException("Artiklu koji pokusavate da dodate je istekao rok trajanja");
+		}
 		this.rokTrajanja = rokTrajanja;
 	}	
 	
