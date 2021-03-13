@@ -2,7 +2,9 @@ package magacin;
 
 import java.util.LinkedList;
 
-public class Magacin {
+import magacin.interfejs.IMagacin;
+
+public class Magacin implements IMagacin{
 	
 	LinkedList<Artikal> artikli;
 
@@ -17,6 +19,24 @@ public class Magacin {
 
 	public void setArtikli(LinkedList<Artikal> artikli) {
 		this.artikli = artikli;
+	}
+
+	@Override
+	public void dodajArtikal(Artikal artikal) {
+		
+		
+	}
+
+	@Override
+	public Artikal izbaciArtikal(Artikal artikal) {
+		
+		return null;
+	}
+
+	@Override
+	public Artikal pronadjiArtikal(int sifra) {
+		
+		return null;
 	}
 
 }
