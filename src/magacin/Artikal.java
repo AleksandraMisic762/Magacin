@@ -88,8 +88,6 @@ public class Artikal {
 				return false;
 		} else if (!naziv.equals(other.naziv))
 			return false;
-		if (sifra != other.sifra)
-			return false;
 		return true;
 	}
 	

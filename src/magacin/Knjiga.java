@@ -37,8 +37,6 @@ public class Knjiga extends Artikal {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!super.equals(obj))
-			return false;
 		if (getClass() != obj.getClass())
 			return false;
 		Knjiga other = (Knjiga) obj;
